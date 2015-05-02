@@ -9,8 +9,8 @@ before_script:
   - sudo apt-get install tree
 script:
   - wintersmith build
-after_success: 
   - cd build; tree; cd ..;
+after_success: 
   - bash gh-pages-deploy.sh
 branches:
   only:
