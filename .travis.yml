@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "0.10"
+before_install:
+  - npm install wintersmith
+script:
+  - wintersmith build
+after_success: 
+  - bash gh-pages-deploy.sh
+branches:
+  only:
+    master
+env: 
+  global:
+    secure: "W3JfAIkPMkDpuiJJeXpwUF05rsv1pU/DDcq6uBBuIlf9plYlE/HXj0T/zet1sEevQgZ6tFT1iAyQmkvUaRsbRWjYpSGwQFsyt79BrmR5AEfXjfduX1LPckYALxXfIA4CM7aqa3A6jioDlSbvogQ4QPG85i9m7CPISKOKYrWBXlU="
