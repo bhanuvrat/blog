@@ -10,6 +10,7 @@ before_script:
 script:
   - wintersmith build
 after_success: 
+  - cd build; tree; cd ..;
   - bash gh-pages-deploy.sh
 branches:
   only:
