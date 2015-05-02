@@ -6,7 +6,8 @@
     "description": "Core dump of the brain."
   },
   "plugins": [
-    "./plugins/paginator.coffee"
+    "./plugins/paginator.coffee",
+    "wintersmith-makerelative"
   ],
   "require": {
     "moment": "moment",
