@@ -7,7 +7,7 @@
   },
   "plugins": [
     "./plugins/paginator.coffee",
-    "wintersmith-makerelative"
+    "./plugins/makerelative.coffee"
   ],
   "require": {
     "moment": "moment",
